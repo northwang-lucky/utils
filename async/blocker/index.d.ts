@@ -4,7 +4,7 @@
  *
  * @example
  * ```ts
- * import { Blocker } from '@northwang-lucky/utils/async/blocker'
+ * import { Blocker } from '@norwa/utils/async/blocker'
  *
  * // without return value
  * const blocker = new Blocker()
