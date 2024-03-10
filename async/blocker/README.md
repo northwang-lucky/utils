@@ -1,22 +1,12 @@
+## Classes
 
+### Blocker\<T\>
 
-## Class
+This is a process blocker, whose role as it's name.
+Implemented by Promise.
 
----
+#### Example
 
-### Blocker
-
-**kind**: Class
-
-This is a process blocker, whose role as it's name. Implemented by `Promise`.
-
-**signature**:
-
-```ts
-export declare class Blocker<T = undefined> 
-```
-
-**example**: 
 ```ts
 import { Blocker } from '@norwa/utils/async/blocker'
 
@@ -35,47 +25,58 @@ setTimeout(() => {
 const msg = await blocker.on() // msg: ok
 ```
 
-#### off
+#### Type parameters
 
-**kind**: Method
+• **T** = `undefined`
 
-Stop the blocker
+#### Constructors
 
-**params**:
+##### new Blocker()
 
-- *param* value?: `T` A value that `on()` will receive
+> **new Blocker**\<`T`\>(): [`Blocker`](README.md#blockert)\<`T`\>
 
-**signature**:
+###### Returns
 
-```ts
-off(value?: T): void;
-```
+[`Blocker`](README.md#blockert)\<`T`\>
 
-#### on
+#### Accessors
 
-**kind**: Method
+##### pending
 
-Start the blocker
-
-**returns**:  A value from `off(value: T)`
-
-**signature**:
-
-```ts
-on(): Promise<T | undefined>;
-```
-
-#### pending
-
-**kind**: Property
+> **`get`** **pending**(): `boolean`
 
 Get whether it is pending or not
 
-**signature**:
+###### Returns
 
-```ts
-get pending(): boolean;
-```
+`boolean`
 
+#### Methods
 
+##### off()
 
+> **off**(`value`?): `void`
+
+Stop the blocker
+
+###### Parameters
+
+• **value?**: `T`
+
+A value that `on()` will receive
+
+###### Returns
+
+`void`
+
+##### on()
+
+> **on**(): `Promise`\<`undefined` \| `T`\>
+
+Start the blocker
+
+###### Returns
+
+`Promise`\<`undefined` \| `T`\>
+
+A value from `off(value: T)`

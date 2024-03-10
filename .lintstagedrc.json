@@ -1,3 +1,4 @@
 {
+  "*.test.ts": "pnpm run test",
   "!(*d).ts": ["pnpm run format", "pnpm run lint"]
 }
