@@ -1,27 +1,6 @@
 {
-  "name": "@norwa/utils",
-  "version": "0.0.0-alpha.0",
-  "description": "Some useful functions",
-  "keywords": [
-    "utils"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/northwang-lucky/utils.git"
-  },
-  "license": "MIT",
-  "author": "northwang-lucky",
-  "sideEffects": false,
-  "type": "module",
-  "main": "index.js",
-  "files": [
-    "async/**/*.js",
-    "async/**/*.d.ts",
-    "object/**/*.js",
-    "object/**/*.d.ts",
-    "index.js",
-    "index.d.ts"
-  ],
+  "name": "@norwa/core",
+  "private": true,
   "scripts": {
     "build": "tsc",
     "docs": "esno scripts/docs.ts",
@@ -52,9 +31,5 @@
     "typedoc-plugin-markdown": "4.0.0-next.53",
     "typescript": "5.3.3",
     "vitest": "1.3.1"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
   }
 }
