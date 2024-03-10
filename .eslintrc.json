@@ -14,6 +14,7 @@
         "allowTypedFunctionExpressions": true
       }
     ],
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "@typescript-eslint/member-ordering": "error",
     "prettier/prettier": "error",
