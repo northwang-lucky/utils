@@ -2,11 +2,11 @@
   "name": "@norwa/core",
   "private": true,
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf -g \"publish/!(package.json|README.md)\" && tsc",
     "docs": "esno scripts/docs.ts",
     "format": "prettier -w .",
     "lint": "eslint",
-    "prepare": "rimraf ./.husky && husky install && husky add .husky/commit-msg \"npx commitlint --edit\" && husky add .husky/pre-commit \"npx lint-staged\"",
+    "prepare": "rimraf .husky && husky install && husky add .husky/commit-msg \"npx commitlint --edit\" && husky add .husky/pre-commit \"npx lint-staged\"",
     "test": "vitest run --coverage"
   },
   "devDependencies": {
