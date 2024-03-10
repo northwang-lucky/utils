@@ -11,7 +11,7 @@ test('Blocker without return value', async () => {
       clearInterval(timer);
       blocker.off();
     }
-  }, 1000);
+  }, 200);
   await blocker.on();
   expect(blocker.pending).toBe(false);
 });
@@ -26,7 +26,7 @@ test('Blocker with return value', async () => {
       clearInterval(timer);
       blocker.off('success');
     }
-  }, 1000);
+  }, 200);
   const msg = await blocker.on();
   expect(blocker.pending).toBe(false);
   expect(msg).toBe('success');

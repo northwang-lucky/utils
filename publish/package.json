@@ -1,0 +1,21 @@
+{
+  "name": "@norwa/utils",
+  "version": "0.0.0-alpha.1",
+  "description": "Some useful functions",
+  "keywords": [
+    "utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/northwang-lucky/utils.git"
+  },
+  "license": "MIT",
+  "author": "northwang-lucky",
+  "sideEffects": false,
+  "type": "module",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
