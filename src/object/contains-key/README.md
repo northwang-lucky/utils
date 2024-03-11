@@ -1,6 +1,6 @@
 [Back Home](/README.md)
 
-## Functions
+## Function
 
 ### containsKey()
 

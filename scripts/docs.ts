@@ -30,6 +30,10 @@ import { __dirname } from './__base__';
         cleanOutputDir: false,
         excludeInternal: true,
         excludePrivate: true,
+        textContentMappings: {
+          'kind.function.plural': 'Function',
+          'kind.class.plural': 'Class',
+        },
       } as Partial<TypeDocOptions>);
 
       const project = await app.convert();
