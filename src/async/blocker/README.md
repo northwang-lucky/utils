@@ -1,6 +1,6 @@
 [Back Home](/README.md)
 
-## Classes
+## Class
 
 ### Blocker\<T\>
 

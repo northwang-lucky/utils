@@ -17,4 +17,4 @@
  * @public
  */
 export declare function containsKey(obj: object, key: string): boolean;
-export declare function containsKey<T>(obj: T, key: keyof T): boolean;
+export declare function containsKey<T, K extends keyof T = keyof T>(obj: T, key: K): obj is T & Required<Pick<T, K>>;

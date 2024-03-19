@@ -1,4 +1,4 @@
 {
-  "*.test.ts": "pnpm run test",
-  "!(*d).ts": ["pnpm run format", "pnpm run lint"]
+  "!(*d).ts": ["prettier -w", "eslint --fix"],
+  "*.test.ts": "vitest related --run"
 }
