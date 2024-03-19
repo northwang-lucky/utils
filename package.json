@@ -2,7 +2,7 @@
   "name": "@norwa/core",
   "private": true,
   "scripts": {
-    "build": "rimraf -g \"publish/!(package.json|README.md)\" && tsc",
+    "build": "rimraf -g \"publish/!(package.json|README.md|LICENSE)\" && tsc",
     "docs": "esno scripts/docs.ts",
     "format": "prettier -w .",
     "lint": "eslint",
