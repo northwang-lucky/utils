@@ -21,7 +21,7 @@ import { __dirname } from './__base__';
         plugin: ['typedoc-plugin-markdown'],
         entryPoints: [realPath],
         outputFileStrategy: 'modules',
-        readme: pathJoin(rootPath, 'EMPTY.md'),
+        readme: pathJoin(rootPath, 'HEADER.md'),
         disableSources: true,
         mergeReadme: true,
         hidePageHeader: true,
