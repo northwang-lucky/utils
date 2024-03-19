@@ -3,6 +3,8 @@
  *
  * @example
  * ```ts
+ * import { randomString } from '@norwa/utils/random/random-string'
+ *
  * randomString(6)
  * randomString(6, { charset: '1234567890' })
  * randomString(6, { removeConfusion: true })
