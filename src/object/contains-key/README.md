@@ -38,18 +38,20 @@ containsKey<{ a: number; b?: string }>(obj, 'b') // echo false
 
 #### containsKey(obj, key)
 
-> **containsKey**\<`T`\>(`obj`, `key`): `boolean`
+> **containsKey**\<`T`, `K`\>(`obj`, `key`): `obj is T & Required<Pick<T, K>>`
 
 ##### Type parameters
 
 • **T**
 
+• **K** extends `string` \| `number` \| `symbol` = keyof `T`
+
 ##### Parameters
 
 • **obj**: `T`
 
-• **key**: keyof `T`
+• **key**: `K`
 
 ##### Returns
 
-`boolean`
+`obj is T & Required<Pick<T, K>>`

@@ -17,7 +17,10 @@
  * @public
  */
 export function containsKey(obj: object, key: string): boolean;
-export function containsKey<T>(obj: T, key: keyof T): boolean;
-export function containsKey<T>(obj: T | object, key: keyof T | string): boolean {
+export function containsKey<T, K extends keyof T = keyof T>(obj: T, key: K): obj is T & Required<Pick<T, K>>;
+export function containsKey<T, K extends keyof T = keyof T>(
+  obj: T | object,
+  key: keyof T | string
+): obj is T & Required<Pick<T, K>> {
   return Object.prototype.hasOwnProperty.call(obj, key);
 }
