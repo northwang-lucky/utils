@@ -3,6 +3,7 @@ export { find } from './array/find';
 export { includes } from './array/includes';
 
 export { Blocker } from './async/Blocker';
+export { delay } from './async/delay';
 
 export { EventEmitter } from './event/EventEmitter';
 
