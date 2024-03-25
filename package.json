@@ -7,6 +7,7 @@
     "format": "prettier -w .",
     "lint": "eslint",
     "prepare": "rimraf .husky && husky install && husky add .husky/commit-msg \"npx commitlint --edit\" && husky add .husky/pre-commit \"npx lint-staged\"",
+    "serve:cov": "live-server --port=10086 --host=\"0.0.0.0\" --no-browser ./coverage",
     "test": "vitest run --coverage"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "glob": "10.3.10",
     "husky": "8.0.3",
     "lint-staged": "15.2.2",
+    "live-server": "1.2.2",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.12",
     "rimraf": "5.0.5",
