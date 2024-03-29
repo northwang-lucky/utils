@@ -10,7 +10,7 @@ Implemented by Promise.
 #### Example
 
 ```ts
-import { Blocker } from '@norwa/utils/async/blocker'
+import { Blocker } from '@norwa/utils/async/Blocker'
 
 // without return value
 const blocker = new Blocker()

@@ -10,7 +10,7 @@ Implemented with "Publish Subscribe Mode".
 #### Example
 
 ```ts
-import { EventEmitter } from '@norwa/utils/event/event-emitter'
+import { EventEmitter } from '@norwa/utils/event/EventEmitter'
 
 const eventEmitter = new EventEmitter()
 let callbackId: string | undefined

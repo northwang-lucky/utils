@@ -1,6 +1,6 @@
 import { find } from '../../array/find';
-import { containsKey } from '../../object/contains-key';
-import { randomString } from '../../random/random-string';
+import { containsKey } from '../../object/containsKey';
+import { randomString } from '../../random/randomString';
 import { CallbackFn, EventCallback } from './types';
 
 /**
@@ -9,7 +9,7 @@ import { CallbackFn, EventCallback } from './types';
  *
  * @example
  * ```ts
- * import { EventEmitter } from '@norwa/utils/event/event-emitter'
+ * import { EventEmitter } from '@norwa/utils/event/EventEmitter'
  *
  * const eventEmitter = new EventEmitter()
  * let callbackId: string | undefined

@@ -29,7 +29,7 @@ Is the object contains the key
 ##### Example
 
 ```ts
-import { containsKey } from '@norwa/utils/object/contains-key'
+import { containsKey } from '@norwa/utils/object/containsKey'
 
 const obj = { a: 1 }
 containsKey(obj, 'a') // echo true
